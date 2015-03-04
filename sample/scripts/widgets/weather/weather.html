@@ -1,12 +1,12 @@
-<div class="text-center">
-  <div class="alert alert-info" ng-if="!data">
-    Please insert a location in the widget configuration
+<div class="tile">
+<div class="alert alert-info" ng-if="!data">
+	Please insert a location in the widget configuration
   </div>
-  <div class="weather" ng-if="data">
-    <h4>{{data.name}} ({{data.sys.country}})</h4>
-    <dl>
-      <dt>Temprature:</dt>
-      <dd>{{data.main.temp | number:2}}</dd>
-    </dl>
-  </div>
+	<a href="#" class="fa-links text-center">
+		<h1 class="tile-text">{{data.name}} ({{data.sys.country}})</h1>
+		<dl>
+		  <dt>Temprature:</dt>
+		  <dd>{{data.main.temp | number:2}}</dd>
+		</dl>
+	</a>
 </div>

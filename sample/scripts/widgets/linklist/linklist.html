@@ -1,7 +1,8 @@
-<div class="linklist">
+<div class="linklist tile tile-green">
+  <h1 class="text-center">Links</h1>
   <ul>
     <li ng-repeat="link in list.links | orderBy:'title'">
-      <a target="_blank" ng-href="{{link.href}}">{{link.title}}</a>
+      <a target="_blank"  class="fa-links" ng-href="{{link.href}}">{{link.title}}</a>
     </li>
   </ul>
 </div>
